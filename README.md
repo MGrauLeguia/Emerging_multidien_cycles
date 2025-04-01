@@ -37,6 +37,6 @@ A **MATLAB graphical user interface (GUI)** for simulating the **Kuramoto-Sakagu
 ## 🚀 How to Run  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/Kuramoto-GUI.git
-   cd Kuramoto-GUI
+   git clone https://github.com/MGrauLeguia/Emerging_multidien_cycles.git
+   cd Emerging_multidien_cycles
   

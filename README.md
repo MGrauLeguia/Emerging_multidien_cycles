@@ -15,9 +15,9 @@ Here, we provide the codes and a GUI to simulate a system of oscillators that ca
 
 A **MATLAB graphical user interface (GUI)** for simulating the **Kuramoto-Sakaguchi Model**, which describes phase synchronization in a network of coupled oscillators. This tool allows users to **interactively tune parameters** and **visualize oscillator dynamics** in real time.  
 ## Equation
-\[
-    \dot{\phi_j}(t)=\omega -\epsilon(\phi_{j}(t)-\psi(t)+\alpha_{D}(t)) - \frac{1}{2b}\sum_{k=j-b}^{j+b}\sin({\phi_{j}(t)-\phi_{k}(t)+\alpha})
-\]
+$$
+\dot{\phi_j}(t)=\omega -\epsilon(\phi_{j}(t)-\psi(t)+\alpha_{D}(t)) - \frac{1}{2b}\sum_{k=j-b}^{j+b}\sin({\phi_{j}(t)-\phi_{k}(t)+\alpha})
+$$
 
 
 

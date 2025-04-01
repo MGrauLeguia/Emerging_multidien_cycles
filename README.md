@@ -15,7 +15,7 @@ Here, we provide the codes and a GUI to simulate a system of oscillators that ca
 
 A **MATLAB graphical user interface (GUI)** for simulating the **Kuramoto-Sakaguchi Model**, which describes phase synchronization in a network of coupled oscillators. This tool allows users to **interactively tune parameters** and **visualize oscillator dynamics** in real time.  
 ## Equation
-<img src="equation.png" width="500">
+<img src="equation.png" width="800">
 
 
 

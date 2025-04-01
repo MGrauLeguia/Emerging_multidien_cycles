@@ -14,6 +14,10 @@ Here, we provide the codes and a GUI to simulate a system of oscillators that ca
 # Kuramoto-Sakaguchi Model GUI  
 
 A **MATLAB graphical user interface (GUI)** for simulating the **Kuramoto-Sakaguchi Model**, which describes phase synchronization in a network of coupled oscillators. This tool allows users to **interactively tune parameters** and **visualize oscillator dynamics** in real time.  
+## Equation
+\[
+    \dot{\phi_j}(t)=\omega -\epsilon(\phi_{j}(t)-\psi(t)+\alpha_{D}(t)) - \frac{1}{2b}\sum_{k=j-b}^{j+b}\sin({\phi_{j}(t)-\phi_{k}(t)+\alpha})
+\]
 
 
 ## ✨ Features  
@@ -22,11 +26,9 @@ A **MATLAB graphical user interface (GUI)** for simulating the **Kuramoto-Sakagu
 ✅ **Periodogram (Frequency Spectrum Analysis)**: Computed at the **end** of the simulation.  
 ✅ **Interactive Controls**: Adjust model parameters in real-time:  
    - **α (Phase Lag)** – Controls phase shift in coupling.  
-   - **b (Broadness)** – Defines the connectivity of the network.  
+   - **b (Broadness)** – Defines the connectivity of the network of a squared kernel.  
    - **ε (Zeitgeber Strength)** – Strength of external forcing.  
    - **p (Coupling Reduction)** – Probability of randomly removing links.  
-✅ **Continuous Order Parameter Plot**: Retains past values instead of resetting.  
-✅ **Smooth Oscillator Flow**: Improved animation for natural oscillator movement.  
 
 ## 🖥️ GUI Layout  
 - **Left Panel** → **Polar Plot** (oscillators' phase positions + mean vector arrow)  

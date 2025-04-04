@@ -7,7 +7,30 @@ This repository contains two main folders:
 
 
 # Emerging_multidien_cycles manuscript
-Here, we provide the codes and a GUI to simulate a system of oscillators that can generate 'multdien' (multi-day) cycles by the interaction of circadian oscillators.
+
+This folder contains the necessary scripts to perform a large-scale parameter sweep of the model presented in the paper **"Emerging multidien cycles from partial circadian synchrony."** These simulations are intended to be run on a computing cluster. Otherwise skip the sl code and directly simulate the matlab codes for specific parameters.
+
+### Contents
+
+- **`mainClusterChimerasAllparam.sl`**  
+  A Slurm batch script for submitting the simulation job to a computing cluster. It handles the job scheduling and execution environment.
+
+- **`mainClusterChimerasAllparam.m`**  
+  The main MATLAB script that runs the full parameter exploration. It iterates over the desired range of model parameters and launches individual simulations using `ChimerasSimAllParam.m`.
+
+- **`ChimerasSimAllParam.m`**  
+  This script contains the simulation logic for the Kuramoto-Sakaguchi model with local coupling. It returns time series data, the Kuramoto order parameter, and other metrics for each parameter configuration.
+
+- **`WaveletTransform.m`**  
+  A utility function to compute the continuous wavelet transform (CWT) of the Kuramoto order parameter. Used to extract frequency content and identify multidien rhythms.
+
+### How to Run
+
+To run the parameter sweep on a cluster:
+1. Edit the Slurm script (`mainClusterChimerasAllparam.sl`) to match your environment (e.g., paths, modules, job time, etc.).
+2. Submit the job using:
+   ```bash
+   sbatch mainClusterChimerasAllparam.sl
 
 
 

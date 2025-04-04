@@ -57,11 +57,13 @@ A **MATLAB graphical user interface (GUI)** for simulating the **Kuramoto-Sakagu
 - **Left Panel** → **Polar Plot** (oscillators' phase positions + mean vector arrow)  
 - **Top-Right** → **Kuramoto Order Parameter** (tracks synchronization over time)  
 - **Bottom-Right** → **Periodogram** (frequency spectrum at the end of the simulation)  
-- **Right Panel** → **Parameter inputs & Start button**  
+- **Right Panel** → **Parameter inputs & Start button**
+  <img src="exampleGUI.png" width="800">
+
 
 ## 🚀 How to Run  
 1. Clone the repository:  
    ```bash
    git clone https://github.com/MGrauLeguia/Emerging_multidien_cycles.git
    cd Emerging_multidien_cycles
-  
+
